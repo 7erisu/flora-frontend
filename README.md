@@ -7,6 +7,10 @@ Frontend завершеного full-stack проєкту Flora.
 - Swagger UI: https://flora-api-cl5c.onrender.com/api-docs
 - Backend repository: https://github.com/7erisu/flora-backend
 
+## Final review
+
+Frontend, backend API, PostgreSQL integration and Swagger documentation are ready for mentor review.
+
 Адаптивна mobile-first верстка лендингу квіткової студії Flora за навчальним макетом.
 
 ## Реалізовано

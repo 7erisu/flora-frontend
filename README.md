@@ -1,6 +1,11 @@
-# Flora — scopes 1–2
+# Flora — Full-stack project
 
-Frontend завершеного full-stack проєкту Flora. Backend знаходиться в окремій локальній папці `backend` і підготовлений до публікації як окремий GitHub-репозиторій.
+Frontend завершеного full-stack проєкту Flora.
+
+- Живий сайт: https://7erisu.github.io/flora-frontend/
+- Backend API: https://flora-api-cl5c.onrender.com/api
+- Swagger UI: https://flora-api-cl5c.onrender.com/api-docs
+- Backend repository: https://github.com/7erisu/flora-backend
 
 Адаптивна mobile-first верстка лендингу квіткової студії Flora за навчальним макетом.
 

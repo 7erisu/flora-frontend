@@ -25,6 +25,7 @@ const normalizeBouquet = (item) => ({
   ...item,
   image1x: item.image1x || item.photoURL,
   image2x: item.image2x || item.photoURL,
+  alt: item.alt || `${item.title} bouquet`,
 });
 
 export async function fetchBouquets({ page = 1, limit = 4, category = 'all', query = '', featured } = {}) {

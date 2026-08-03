@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Handcrafted bouquets for every occasion from Flora floral studio.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Flora — Stunning Bouquets</title>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="./images/retina/hero-mobile-1x.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="Flora home"><svg width="84" height="36" aria-hidden="true"><use href="./images/icons.svg#Logo"></use></svg></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#bestsellers">Bestsellers</a></li>
+            <li><a href="#bouquets">Bouquets</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <a class="button header-cta" href="#bouquets">Explore Bouquets</a>
+        <button class="menu-button" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" data-menu-button><span></span></button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+        <nav aria-label="Mobile navigation">
+          <ul class="mobile-nav-list">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#bestsellers">Bestsellers</a></li>
+            <li><a href="#bouquets">Bouquets</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Brighten Your Day with Our Stunning Bouquets</h1>
+            <p class="hero-copy">At Flora, we believe that every occasion deserves a beautiful bouquet. Our expertly crafted arrangements are designed to bring joy and elegance to your celebrations.</p>
+            <a class="button" href="#bestsellers">Explore Our Bestsellers</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div>
+            <div class="flower-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h2 class="section-title">Our Passion for Floral Artistry</h2>
+            <p class="section-copy">At Flora, we believe that every bouquet tells a story. Our team meticulously crafts each arrangement, blending creativity with the freshest blooms to create stunning pieces for every occasion.</p>
+          </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./images/retina/about-640-1x.webp 1x, ./images/retina/about-640-2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="./images/retina/about-tablet-1x.webp 1x, ./images/retina/about-tablet-2x.webp 2x">
+            <img class="about-image" src="./images/retina/about-mobile-1x.webp" srcset="./images/retina/about-mobile-1x.webp 1x, ./images/retina/about-mobile-2x.webp 2x" width="640" height="427" loading="lazy" alt="Florist arranging white flowers in a workshop">
+          </picture>
+        </div>
+      </section>
+
+      <section class="section bestsellers" id="bestsellers">
+        <div class="container">
+          <p class="eyebrow">Selected with care</p>
+          <h2 class="section-title">Top-Selling Bouquets</h2>
+          <ul class="card-grid" aria-live="polite" aria-busy="true" data-bestsellers-list></ul>
+        </div>
+      </section>
+
+      <section class="section" id="bouquets">
+        <div class="container">
+          <div class="catalogue-heading">
+            <p class="eyebrow">Made for your moment</p>
+            <h2 class="section-title">Bouquets</h2>
+            <p class="section-copy">Explore our stunning selection of fresh flower bouquets.</p>
+          </div>
+          <div class="catalogue-tools">
+            <form class="search-form" data-search-form role="search">
+              <label for="bouquet-search">Search bouquets</label>
+              <div class="search-control"><input id="bouquet-search" name="query" type="search" placeholder="Search by name" data-search-input><button type="submit">Search</button></div>
+            </form>
+            <div class="filter-control">
+              <label for="category-filter">Flower mood</label>
+              <select id="category-filter" name="category" data-category-filter>
+                <option value="all">All bouquets</option>
+                <option value="romantic">Romantic</option>
+                <option value="pastel">Pastel</option>
+                <option value="bright">Bright</option>
+              </select>
+            </div>
+          </div>
+          <p class="catalogue-status" role="status" data-catalogue-status>Loading bouquets…</p>
+          <ul class="card-grid catalogue-grid" aria-live="polite" data-catalogue-list></ul>
+          <button class="button load-more" type="button" data-load-more hidden>Load more</button>
+        </div>
+      </section>
+
+      <section class="section testimonial" id="feedback">
+        <div class="container">
+          <p class="eyebrow">Kind words</p>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <ul class="quote-grid">
+            <li><blockquote class="quote-card"><p>“The bouquet was even more beautiful than I imagined. Every detail felt thoughtful.”</p><footer>— Olivia, Sydney</footer></blockquote></li>
+            <li><blockquote class="quote-card"><p>“Flora made our anniversary unforgettable. Fresh flowers and wonderful service.”</p><footer>— Ethan, Melbourne</footer></blockquote></li>
+            <li><blockquote class="quote-card"><p>“Elegant, fragrant, and delivered perfectly on time. My new favourite florist.”</p><footer>— Mia, Brisbane</footer></blockquote></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Connect</p>
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-copy">We’re here to assist you with all your floral needs and inquiries.</p>
+            <address class="contact-list">
+              <p><span class="contact-label">Phone</span><a class="contact-value" href="tel:+15551234567">+1 (555) 123-4567</a></p>
+              <p><span class="contact-label">Store</span><span class="contact-value">456 Floral Ave, Sydney NSW 2000 AU</span></p>
+            </address>
+          </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./images/retina/contacts-640-1x.webp 1x, ./images/retina/contacts-640-2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="./images/retina/contacts-tablet-1x.webp 1x, ./images/retina/contacts-tablet-2x.webp 2x">
+            <img class="contact-image" src="./images/retina/contacts-mobile-1x.webp" srcset="./images/retina/contacts-mobile-1x.webp 1x, ./images/retina/contacts-mobile-2x.webp 2x" width="640" height="427" loading="lazy" alt="Florist holding a fresh bouquet in the flower shop">
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <a class="logo footer-logo" href="#top" aria-label="Flora home"><svg viewBox="0 0 84 36" aria-hidden="true"><use href="./images/icons.svg#Logo"></use></svg></a>
+          <nav aria-label="Footer navigation"><ul class="footer-nav"><li><a href="#about">About Us</a></li><li><a href="#bestsellers">Bestsellers</a></li><li><a href="#bouquets">Bouquets</a></li><li><a href="#feedback">Feedback</a></li><li><a href="#contacts">Contacts</a></li></ul></nav>
+          <ul class="social-list">
+            <li><a class="social-link" href="#" aria-label="Facebook">f</a></li>
+            <li><a class="social-link" href="#" aria-label="Instagram">◎</a></li>
+            <li><a class="social-link" href="#" aria-label="X">x</a></li>
+          </ul>
+        </div>
+        <form class="subscription-form" data-subscription-form>
+          <div><label for="subscription-email">Fresh flowers in your inbox</label><p>Seasonal inspiration and Flora news, once a month.</p></div>
+          <div class="subscription-control"><input id="subscription-email" name="subscriptionEmail" type="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Subscribe</button></div>
+        </form>
+        <p class="form-notice" role="status" data-subscription-notice></p>
+        <p class="copyright">© <span data-current-year>2026</span> Flora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="modal-backdrop" aria-hidden="true" data-modal-backdrop>
+      <section class="order-modal" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+        <button class="modal-close" type="button" aria-label="Close order form" data-modal-close>×</button>
+        <p class="eyebrow">Personal floral service</p>
+        <h2 class="modal-title" id="order-modal-title">Order Your Bouquet</h2>
+        <p class="modal-copy">Leave your details and our florist will help you complete the order.</p>
+        <form class="order-form" data-order-form>
+          <div class="form-field"><label for="order-name">Your name</label><input id="order-name" name="customerName" type="text" autocomplete="name" placeholder="Olivia Smith" required></div>
+          <div class="form-field"><label for="order-phone">Phone number</label><input id="order-phone" name="customerPhone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567" required></div>
+          <div class="form-field"><label for="order-bouquet">Bouquet</label><input id="order-bouquet" name="bouquet" type="text" placeholder="Bouquet name" required></div>
+          <div class="form-field"><label for="order-message">Your wishes</label><textarea id="order-message" name="customerMessage" rows="3" placeholder="Delivery date or a message for the card"></textarea></div>
+          <label class="custom-checkbox">
+            <input class="native-checkbox" name="licenseAgreement" type="checkbox" required>
+            <span class="checkbox-icon" aria-hidden="true"><svg width="16" height="16"><use href="./images/check.svg#check"></use></svg></span>
+            <span>I agree to the processing of my contact details.</span>
+          </label>
+          <button class="button modal-submit" type="submit">Send request</button>
+        </form>
+      </section>
+    </div>
+    <p class="floating-notice" role="status" data-form-notice></p>
+  </body>
+</html>
